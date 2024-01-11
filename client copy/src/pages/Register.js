@@ -39,6 +39,22 @@ const Register = () => {
   };
   return (
     <>
+     <img
+          src={'./KR.png'}
+          alt="Temporary Video"
+          style={{
+            position: "absolute",
+            top: "10%",
+            left: "27%",
+            width: "50%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: -1,
+          }}
+          autoPlay
+          muted
+          loop
+        />
       <form onSubmit={handleSubmit}>
         <Box
           maxWidth={450}

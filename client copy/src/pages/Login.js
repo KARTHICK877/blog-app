@@ -42,15 +42,31 @@ const Login = () => {
   };
   return (
     <>
-      <form onSubmit={handleSubmit}>
+   <img
+          src={'./KR.png'}
+          alt="Temporary Video"
+          style={{
+            position: "absolute",
+            top: "10%",
+            left: "27%",
+            width: "50%",
+            height: "100%",
+            objectFit: "cover",
+            zIndex: -1,
+          }}
+          autoPlay
+          muted
+          loop
+        />
+      <form onSubmit={handleSubmit} >
         <Box
-          maxWidth={450}
+          maxWidth={500}
           display="flex"
           flexDirection={"column"}
           alignItems="center"
           justifyContent={"center"}
           margin="auto"
-          marginTop={5}
+          marginTop={10}
           boxShadow="10px 10px 20px #ccc"
           padding={3}
           borderRadius={5}
@@ -91,7 +107,7 @@ const Login = () => {
           >
             Submit
           </Button>
-          <Button
+          <Button style={{color:"blue",fontSize:"120%",textDecoration:"underline"}}
             onClick={() => navigate("/register")}
             sx={{ borderRadius: 3, marginTop: 3 }}
           >
@@ -99,6 +115,7 @@ const Login = () => {
           </Button>
         </Box>
       </form>
+      
     </>
   );
 };
