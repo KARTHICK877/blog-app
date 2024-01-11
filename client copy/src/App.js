@@ -27,7 +27,7 @@ function App() {
       {showImage && (
         <ImageComponent
         videoPath={'./one.mp4'} // Replace with the actual image path
-          duration={7000} // 7 seconds
+          duration={6000} // 7 seconds
           onTimeout={handleImageTimeout}
         />
       )}
