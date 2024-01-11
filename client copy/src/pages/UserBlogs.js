@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import BlogCard from "../components/BlogCard";
+import '../App.css'
 const UserBlogs = () => {
   const [blogs, setBlogs] = useState([]);
 
@@ -22,7 +23,7 @@ const UserBlogs = () => {
   }, []);
   console.log(blogs);
   return (
-    <div>
+    <div  className="app">
       {blogs && blogs.length > 0 ? (
         blogs.map((blog) => (
           <BlogCard

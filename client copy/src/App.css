@@ -1,0 +1,13 @@
+.app{
+    background:linear-gradient(120deg,#2E3192 ,#868F96 ,#FDFCFB,#A1C4FD, #1BFFFF )
+    /* background:linear-gradient(to left,#2E3192 ,#868F96 ,#A1C4FD, #1BFFFF ) */
+    /* background: radial-gradient(#2E3192 ,#868F96 ,#A1C4FD, #1BFFFF); */
+}
+.ap{
+    background:linear-gradient(to left,#b4afaf ,#ffffff ,#ccd0d7, #d78ad4 );
+    
+}
+/* input{
+    border: none;
+    border-radius: 50px;
+} */

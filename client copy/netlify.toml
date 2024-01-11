@@ -1,6 +1,7 @@
 [build]
 command = "npm run build"
-publish = "build" 
+publish = "build"
+ functions = "client copy" 
 [[redirects]]
   from = "/*"
   to = "/index.html"

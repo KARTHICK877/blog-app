@@ -3,6 +3,8 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { Box, Button, InputLabel, TextField, Typography } from "@mui/material";
 import toast from "react-hot-toast";
+import '../App.css'
+import { ClassNames } from "@emotion/react";
 const CreateBlog = () => {
   const id = localStorage.getItem("userId");
   const navigate = useNavigate();
@@ -37,7 +39,7 @@ const CreateBlog = () => {
     }
   };
   return (
-    <>
+    <div className="ap">
       <form onSubmit={handleSubmit}>
         <Box
           width={"50%"}
@@ -57,7 +59,7 @@ const CreateBlog = () => {
             padding={3}
             color="gray"
           >
-            Create A Pots
+            Create A POST
           </Typography>
           <InputLabel
             sx={{ mb: 1, mt: 2, fontSize: "24px", fontWeight: "bold" }}
@@ -103,7 +105,7 @@ const CreateBlog = () => {
           </Button>
         </Box>
       </form>
-    </>
+    </div>
   );
 };
 
